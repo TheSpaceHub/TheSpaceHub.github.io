@@ -8,23 +8,22 @@
     <title>Estadística</title>
 </head>
 <body>
+    <input id="size" type="text">
     <table>
-        <tr>
-            <td><h2>x_i</h2></td>            
-            <td><h2>f_i</h2></td>        
-            <td><h2>x_i f_i</h2></td>         
-            <td><h2>x_i^2 f_i</h2></td>         
-            <td><h2>F_i</h2></td>         
-            <td><h2>%</h2></td> 
-        </tr>
-        <tr>
-            <td><input type="text"></td>            
-            <td><input type="text"></td> 
-            <td><input type="text"></td>            
-            <td><input type="text"></td> 
-            <td><input type="text"></td>            
-            <td><input type="text"></td> 
-        </tr>
+        <tbody id ="tbody">
+            <tr>
+                <td><h2>x_i</h2></td>            
+                <td><h2>f_i</h2></td>        
+                <td><h2>x_i f_i</h2></td>         
+                <td><h2>x_i^2 f_i</h2></td>         
+                <td><h2>F_i</h2></td>         
+                <td><h2>%</h2></td> 
+            </tr>
+            <tr><td colspan="6">-</td></tr>
+        </tbody>
     </table>
+    <button id="build">Build</button>
+    <button id="solve">Solve</button>
+    <script src="scripts.js"></script>
 </body>
 </html>
