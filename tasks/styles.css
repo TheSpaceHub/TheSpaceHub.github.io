@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(200, 200, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    margin-top: 5%;
+    width: 80%;
+    padding: 2%;
+
+    background-color: rgb(100, 100, 200);
+    border-radius: 20px;
+    box-shadow: 10px 10px rgba(100, 100, 100, 0.5);
+}
+
+h1, h3{
+    color: white;
+    text-align: center;
+}
+
+.add{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add > input
+{
+    width: 90%;
+}
+
+.list{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 100, 255);
+    border-radius: 10px;
+}
+
+.task{
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-radius: 5px;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 10px 10px rgba(100, 100, 100, 0.5);
+}
+
+.task > h3{
+    text-align: left;
+    width: auto;
+    max-width: 70%;
+    margin: 2%;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.buttons > button{
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+}
