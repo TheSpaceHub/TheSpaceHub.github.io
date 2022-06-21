@@ -15,15 +15,15 @@ function HTMLTaskToDo(task)
 {
     return "<div class='task'>\n<h3>" + task.task
     + "</h3>\n<div class='buttons'>\n<button class='complete' id='complete"
-    + task.id +  "'>Complete</button>\n<button class='delete' id='delete"
-    + task.id + "'>Delete</button>\n</div>\n</div>\n";
+    + task.id +  "'>Completar</button>\n<button class='delete' id='delete"
+    + task.id + "'>Eliminar</button>\n</div>\n</div>\n";
 }
 
 function HTMLCompletedTask(task)
 {
     return "<div class='task'>\n<h3>" + task.task
     + "</h3>\n<div class='buttons'>\n<button class='delete' id='delete"
-    + task.id + "'>Delete</button>\n</div>\n</div>\n";
+    + task.id + "'>Eliminar</button>\n</div>\n</div>\n";
 }
 
 function RefreshTasksToDo()
@@ -54,10 +54,6 @@ function RefreshCompletedTasks()
     {
         document.getElementById("delete" + completedTasks[i].id.toString()).onclick =
         function(){DeleteCompletedTask(completedTasks[i])};
-        console.log("Inside RefreshCompletedTasks:");
-        console.log("i = " + i.toString());
-        console.log("completedTasks[i] = ");
-        console.log(completedTasks[i]);
     }
 }
 
@@ -100,14 +96,12 @@ function CompleteTask(id)
     }
     RefreshTasksToDo();
     RefreshCompletedTasks();
-    /*
-    let cDelete = document.getElementById("delete" + id.toString());
-    cDelete.onclick = function(){DeleteTask(id, completedTasks);};*/
 }
 
 function AddTask()
 {
     let input = document.getElementById("inputTask").value;
+    document.getElementById("inputTask").value = "";
     if(input === "") return;
     tasksToDo.push(new Task(input));
     RefreshTasksToDo();
