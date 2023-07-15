@@ -1,8 +1,37 @@
-h2{
-    text-align: center;
+h1{
+    margin: 0;
+}
+
+main{
+    background-image: url("./images/background.png");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    padding: 15px;
+    height: 15000px;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+
+.navBar{
+    height: 15vh;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainTitle{
+    vertical-align: middle;
 }
 
 body{
     background-color: rgb(30, 30, 30);
     color: white;
+    margin: 0;
 }
