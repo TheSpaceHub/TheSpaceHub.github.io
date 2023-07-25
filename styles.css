@@ -10,7 +10,7 @@ main{
     background-attachment: fixed;
     margin-top: 15vh;
     padding: 15px;
-    height: 200vh;
+    height: 500vh;
 }
 
 body{
@@ -50,6 +50,7 @@ img{
 .centered{
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
 
 .halfSize{
@@ -103,6 +104,15 @@ img{
     color: white;
     background-color: #000055;
     text-align: center;
+}
+
+/* IDS*/
+
+#portfolioTitle{
+    font-weight: 700;
+    font-size: 5em;
+    display: block;
+    width: auto;
 }
 
 /* EFFECTS */
