@@ -1,6 +1,3 @@
-/*box-shadow: hor vert rad exp col;*/
-
-
 /* HTML ELEMENTS */
 
 h1{
@@ -11,16 +8,16 @@ main{
     background-image: url("./images/background.png");
     background-repeat: repeat-x;
     background-attachment: fixed;
+    margin-top: 15vh;
     padding: 15px;
-    padding-top: calc(15vh + 15px);
-    height: 15000px;
+    height: 200vh;
 }
 
 body{
     background-color: #1c1a24;
     color: white;
     margin: 0;
-    font-family: Tahoma, Verdana, sans-serif;
+    font-family: Comfortaa, Tahoma, Verdana, sans-serif;
 }
 
 a{
@@ -30,7 +27,9 @@ a{
 
 nav{
     position: fixed;
+    top: 0;
     width: calc(100% - 40px);
+    z-index: 1;
 }
 
 img{
@@ -40,15 +39,27 @@ img{
 
 /* CLASSES */
 
+.margin10px{
+    margin: 10px;
+}
+
 .inlineBlock{
     display: inline-block;
 }
 
+.centered{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.halfSize{
+    width: 50%;
+}
+
 .navBar{
-    height: 15vh;
-    padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    height: 15vh;
     background-color: black;
     margin: 0;
     display: flex;
@@ -83,13 +94,15 @@ img{
 }
 
 .seeMore{
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px;
+    width: 50%;
     border-style: solid;
     border-radius: 10px; 
     border-width: 0;
     color: white;
     background-color: #000055;
+    text-align: center;
 }
 
 /* EFFECTS */
@@ -99,5 +112,36 @@ img{
 }
 
 .seeMore:hover{
+    cursor: pointer;
     background-color: #111166;
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+/* ANIMATIONS */
+
+@keyframes opacityTransition {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+#portfolioTitle{
+    opacity: 0;
+    animation-name: opacityTransition;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.portfolio{
+    opacity: 0;
+    animation-name: opacityTransition;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }

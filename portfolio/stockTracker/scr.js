@@ -2,7 +2,7 @@ const xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
 xhr.open("GET", "https://investors-exchange-iex-trading.p.rapidapi.com/stock/GOOG/short-interest");
-xhr.setRequestHeader('X-RapidAPI-Key', '5ec1e81bddmshcbfda051a4972c6p1d632fjsna69f14d7b5c2');
+xhr.setRequestHeader('X-RapidAPI-Key', '');
 xhr.setRequestHeader('X-RapidAPI-Host', 'investors-exchange-iex-trading.p.rapidapi.com');
 xhr.responseType = "json";
 
