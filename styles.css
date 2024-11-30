@@ -140,15 +140,20 @@ img{
 
 #contactLinks{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 30px;
     margin-top: 50px;
+}
+
+#contactLinks > a{
+    width: 30%;
 }
 
 #contactLinks > a > div{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 #contactLinks > a > div > h3{
