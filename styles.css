@@ -147,6 +147,7 @@ img{
 
 #contactLinks > a{
     width: 30%;
+    margin: 15px;
 }
 
 #contactLinks > a > div{
@@ -189,4 +190,23 @@ img{
 
 #contactSection{
     scroll-margin-top: 15vh;
+}
+
+@media screen and (max-width: 900px){
+    .projects{
+        flex-direction: column;
+    }
+    .project{
+        width: 90%;
+    }
+
+    #contactLinks{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #contactLinks > a{
+        width: 100%;
+    }
 }
