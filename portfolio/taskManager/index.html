@@ -8,25 +8,27 @@
     <title>TODO</title>
 </head>
 <body>
+    <nav>
+        <a href="../../index.html"><button id="goHome"><h3>GO HOME</h3></button></a>
+    </nav>
     <main>
         <h1>Task Manager</h1>
         <div class="add">
-            <h3>Add task: </h3>
-            <textarea id="inputTask"></textarea>
-            <button id="addButton">Add</button>
+            <textarea id="inputTask" placeholder="Write your next task"></textarea>
+            <button id="addButton">ADD</button>
         </div>
 
         <h1>To-do list:</h1>
         <div id="listToDo" class="list">
             <div class="task">
-                <h3>Hurray! You have no tasks left.</h3>
+                <h3>No tasks left</h3>
             </div>
         </div>
 
         <h1>Completed tasks:</h1>
         <div id="completedList" class="list">
             <div class="task">
-                <h3>There are no completed tasks.</h3>
+                <h3>No completed tasks</h3>
             </div>
         </div>
     </main>

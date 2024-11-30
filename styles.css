@@ -15,7 +15,7 @@ body{
     background-color: #1c1a24;
     color: white;
     margin: 0;
-    font-family: Comfortaa, Tahoma, Verdana, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
 }
 
 main{
@@ -23,7 +23,7 @@ main{
     background-repeat: repeat-x;
     background-attachment: fixed;
     margin-top: 15vh;
-    height: 500vh;
+    /*height: 500vh;*/
 }
 
 section{
@@ -44,6 +44,14 @@ nav{
     top: 0;
     width: calc(100% - 40px);
     z-index: 1;
+}
+
+.navLinks{
+    display: flex;
+}
+.navLinks>a{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 img{
@@ -84,6 +92,7 @@ img{
 
 .mainTitle{
     vertical-align: middle;
+    margin-left: 15px;
 }
 
 .portfolio{
@@ -101,7 +110,7 @@ img{
 }
 
 .project{
-    width: auto;
+    width: 30%;
     min-height: 50vh;
     background-color: rgb(30, 30, 40);
     padding: 10px;
@@ -127,7 +136,30 @@ img{
     display: block;
     width: auto;
     margin-top: 20px;
-    opacity: 0;
+}
+
+#contactLinks{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+#contactLinks > a > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#contactLinks > a > div > h3{
+    margin: 15px;
+    font-weight: 300;
+    color: white;
+}
+
+.contactIcon{
+    width: 50px;
+    height: 50px;
 }
 
 /* IDS*/
@@ -146,49 +178,10 @@ img{
     transition-duration: 0.3s;
 }
 
-/* ANIMATIONS */
-
-@keyframes opacityTransition {
-    0%{
-        opacity: 0;
-    }
-
-    100%{
-        opacity: 1;
-    }
-}
-
-.titleAnimation{
-    opacity: 0;
-    animation-name: opacityTransition;
-    animation-duration: 0.5s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-#portfolioSubtitle{
-    opacity: 0;
-    animation-name: opacityTransition;
-    animation-duration: 0.5s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-.portfolio{
-    opacity: 0;
-    animation-name: opacityTransition;
-    animation-delay: 2s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes contrast {
-    0%{ background-color: black;}
-    100%{ background-color: white;}
-}
-
 #portfolioSection{
-    animation-name: contrast;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    scroll-margin-top: 15vh;
+}
+
+#contactSection{
+    scroll-margin-top: 15vh;
 }
